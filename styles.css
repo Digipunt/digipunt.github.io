@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
+  color: #525252;
+  line-height: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #525252;
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.left-column {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+.divider {
+  border-left: 2px solid #757575;
+}
+
+.right-column {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid purple; */
+  width: 250px;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+}
+
+.advice {
+  text-align: center;
+}
+
+.date-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid orange; */
+  width: 100%;
+}
+
+.date {
+  /* border: 1px solid green; */
+  text-align: right;
+  width: 100%;
+}
+
+.line {
+  border-left: 2px solid #757575;
+  margin: 0 20px 0 20px;
+  height: 60%;
+}
+
+.location {
+  /* border: 1px solid indigo; */
+  text-align: left;
+  width: 100%;
+}
+
+.surfon {
+  /* border: 1px solid seagreen; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.button {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  width: 20vh;
+  /* border: 2px solid #757575; */
+  background-color: #fab500;
+  line-height: 1.2rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+}
+
+.buttontext {
+  text-align: center;
+  width: auto;
+  line-height: 1.2rem;
+}

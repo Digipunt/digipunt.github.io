@@ -94,6 +94,11 @@ img {
   width: 100%;
 }
 
+.interested {
+  text-align: center;
+  line-height: 0.5rem;
+}
+
 .surfon {
   /* border: 1px solid seagreen; */
   display: flex;

@@ -18,12 +18,56 @@ a {
   display: flex;
   flex-direction: row;
   height: 70%;
-  margin-top: 100px;
+  margin-top: 25px;
   margin-bottom: 100px;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.standard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.google {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  font-size: 16px;
+  height: 40px;
+  width: 500px;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border: none;
+}
+
+.submit {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  margin: 20px auto;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*
 .left-column {
-  /* border: 1px solid blue; */
+  border: 1px solid blue; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,13 +75,14 @@ a {
   height: 100%;
   width: 50%;
 }
+
 
 .divider {
   border-left: 2px solid #757575;
 }
 
 .right-column {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +90,7 @@ a {
   height: 100%;
   width: 50%;
 }
-
+*/
 .welcome {
   text-align: center;
 }
@@ -82,12 +127,13 @@ img {
   width: 100%;
 }
 
+/*
 .line {
   border-left: 2px solid #757575;
   margin: 0 20px 0 20px;
   height: 60%;
 }
-
+*/
 .location {
   /* border: 1px solid indigo; */
   text-align: left;
@@ -99,6 +145,35 @@ img {
   line-height: 0.5rem;
 }
 
+/* Styling to display if workshop is full */
+/* 
+.full {
+  border-radius: 10px;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  right: 7%;
+  top: 25%;
+  text-align: center;
+  // https://getcssscan.com/css-box-shadow-examples
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35vw;
+  height: 25vh;
+  transform: rotate(-20deg);
+} 
+
+.blur {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+*/
+
 .surfon {
   /* border: 1px solid seagreen; */
   display: flex;
@@ -107,6 +182,8 @@ img {
   /* align-items: center; */
 }
 
+/* button animation: https://codepen.io/Alexb98 */
+/*
 .button {
   border-radius: 50%;
   display: flex;
@@ -115,19 +192,73 @@ img {
   align-items: center;
   height: 20vh;
   width: 20vh;
-  /* border: 2px solid #757575; */
+  border: 2px solid #757575; 
   background-color: #fab500;
   line-height: 1.2rem;
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
+ .button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #fab500;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 71%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0.5s;
+} */
+
+/* .button::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #fab500;
+  position: absolute;
+  z-index: -1;
+  top: 71%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  animation: ring 5s infinite;
+} 
+
 .button:hover {
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .buttontext {
   text-align: center;
   width: auto;
   line-height: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* @keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+} */
+
+/* INFO */
+
+.info {
+  text-align: center;
+  margin: auto;
+}
+
+.list {
+  text-align: center;
 }

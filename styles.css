@@ -2,10 +2,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: 'Fira Sans', sans-serif;
   color: #525252;
-  line-height: 0.8rem;
 }
 
 a {
@@ -28,6 +27,11 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 0 20px;
+}
+
+.active {
+  border-bottom: 3px solid #41bbc1;
+  height: 100%;
 }
 
 .standard {
@@ -261,4 +265,55 @@ img {
 
 .list {
   text-align: center;
+}
+
+/* LOCATIES */
+
+.locations-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.locations-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 50px;
+  flex-wrap: wrap;
+}
+
+.location {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 15px;
+  margin: 30px;
+  text-align: center;
+  width: max-content;
+}
+.openingsuren p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 341px;
+  width: 414px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 341px;
+  width: 414px;
 }

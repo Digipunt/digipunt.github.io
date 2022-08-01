@@ -28,9 +28,10 @@ a {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   height: 70%;
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -162,6 +163,20 @@ img {
   text-align: center;
 }
 
+.workshop-dates {
+  margin-top: 50px;
+}
+
+.workshop-light {
+  font-family: 'fira sans light';
+  font-size: 1rem;
+}
+
+.workshop-location {
+  font-size: 1rem;
+  font-family: 'fira sans regular';
+}
+
 .workshop-img-wrapper {
   /* border: 1px solid blue; */
   height: 15vh;
@@ -171,6 +186,11 @@ img {
 .workshop-img {
   height: 100%;
   width: auto;
+}
+
+.signup {
+  margin: 50px 0;
+  font-size: 1.3rem;
 }
 
 /* WORKSHOPS PAGE */
@@ -186,9 +206,6 @@ img {
   border-bottom: 1px solid var(--secondary-color);
   margin: 50px auto;
   padding: 20px;
-}
-
-.description {
 }
 
 .subjectlist {

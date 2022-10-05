@@ -60,11 +60,18 @@ window.onload = function () {
     workshopBody.appendChild(subjectHeader);
     workshopBody.appendChild(workshopSubjects);
     workshopBody.appendChild(workshopExtra);
-    workshopBody.appendChild(signUp);
+    // workshopBody.appendChild(signUp);
 
     // FILL CARD
     workshopCard.appendChild(workshopHeader);
     workshopCard.appendChild(workshopBody);
+
+    // TEMPORARY SIGNUP METHOD
+    let tempSignup = document.createElement('h4');
+    tempSignup.classList.add('temp-signup');
+    tempSignup.textContent =
+      'Inschrijven in het Digipunt, via mail: digipunten@ateljeevzw.be of 0490 44 65 42';
+    workshopCard.appendChild(tempSignup);
 
     workshopCards.appendChild(workshopCard);
   }

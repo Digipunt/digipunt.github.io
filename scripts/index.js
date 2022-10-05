@@ -34,7 +34,7 @@ window.onload = function () {
     workshopInschrijving.href = workshopList[i].inschrijving;
     workshopInschrijving.innerHTML = 'nu inschrijven';
     workshopInschrijving.classList.add('inschrijven');
-    buttonsDiv.appendChild(workshopInschrijving);
+    // buttonsDiv.appendChild(workshopInschrijving);
 
     // LINK MEER INFO
     let workshopInfo = document.createElement('a');
@@ -44,8 +44,14 @@ window.onload = function () {
     // workshopInfo.target = '_blank';
 
     buttonsDiv.appendChild(workshopInfo);
-
     workshopItem.appendChild(buttonsDiv);
+
+    // TEMPORARY SIGNUP METHOD
+    let tempSignup = document.createElement('h4');
+    tempSignup.classList.add('temp-signup');
+    tempSignup.textContent =
+      'Inschrijven in het Digipunt, via mail: digipunten@ateljeevzw.be of 0490 44 65 42';
+    workshopItem.appendChild(tempSignup);
 
     // WORKSHOP ITEM TOEVOEGEN
     workshopEl.appendChild(workshopItem);

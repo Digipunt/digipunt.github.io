@@ -88,6 +88,7 @@ p {
   ); */
   background-image: url('/images/Mask\ group.png');
   background-size: cover;
+  background-position: center;
 }
 
 .hero-content {
@@ -178,7 +179,8 @@ p {
 .workshop-item {
   border-bottom: 1px solid var(--primary-dark);
   width: 40%;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .workshop-container a {
@@ -292,4 +294,8 @@ p {
 
 .workshopBody > p {
   margin: 35px auto;
+}
+
+.temp-signup {
+  margin-top: 40px;
 }

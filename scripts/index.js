@@ -38,7 +38,7 @@ window.onload = function () {
 
     // LINK MEER INFO
     let workshopInfo = document.createElement('a');
-    workshopInfo.href = `/pages/workshops.html`;
+    workshopInfo.href = `./workshops.html`;
     workshopInfo.innerHTML = 'meer info';
     workshopInfo.classList.add('info');
     // workshopInfo.target = '_blank';

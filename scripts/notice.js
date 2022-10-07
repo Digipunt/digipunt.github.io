@@ -1,4 +1,4 @@
-let state = true;
+let state = false;
 
 let boodschap = {
   titel: 'Mededeling',

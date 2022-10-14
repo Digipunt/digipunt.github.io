@@ -75,12 +75,14 @@ window.onload = function () {
     // UREN
     let locationDays = document.createElement('h3');
     let locationHours = document.createElement('p');
+    let extra = document.createElement('p');
 
     // KRINGWINKELS
     if (locations[i].type == 'kringwinkel') {
       locationDays.innerHTML = kringwinkelUren.dagen;
       locationHours.innerHTML =
         kringwinkelUren.am + '<br>' + kringwinkelUren.pm;
+      extra.innerHTML = kringwinkelUren.extra;
     }
 
     // BIBS
@@ -118,6 +120,7 @@ window.onload = function () {
 
     locationItem.appendChild(locationDays);
     locationItem.appendChild(locationHours);
+    locationItem.appendChild(extra);
 
     // TOON OP KAART - LINK NAAR GOOGLE MAPS
     let locationLink = document.createElement('a');

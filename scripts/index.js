@@ -148,6 +148,6 @@ window.onload = function () {
   let footerContent = document.getElementById('footerContent');
   let currentYear = new Date().getFullYear();
   let footer = document.createElement('p');
-  footer.textContent = `© Digipunt ${currentYear}`;
+  footer.textContent = `Digipunt ${currentYear}`;
   footerContent.appendChild(footer);
 };

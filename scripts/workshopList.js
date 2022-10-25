@@ -22,7 +22,8 @@ const workshopList = [
         'opslag beheren',
         "collage maken met Google Foto's",
       ],
-      extra: 'Gelieve uw eigen toestel mee te brengen.',
+      extra:
+        'Gelieve uw eigen toestel mee te brengen (smartphone / tablet / laptop).',
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
@@ -45,7 +46,7 @@ const workshopList = [
         'een flyer maken',
       ],
       extra:
-        'Gelieve uw eigen toestel mee te brengen. In de les gebruik ik Word Online dat gratis toegankelijk is via een Microsoft account. Dit is een beperktere versie maar geschikt voor basisgebruik. Gebruik je een ander tekstverwerkingsprogramma, dan kun je ook deelnemen. Hou er wel rekening mee dat iconen, omschrijvingen en opties kunnen verschillen. Deze lessenreeks is geschikt voor mensen met weinig tot geen kennis van Word.',
+        'Gelieve uw eigen toestel mee te brengen (laptop). In de les gebruik ik Word Online dat gratis toegankelijk is via een Microsoft account. Dit is een beperktere versie maar geschikt voor basisgebruik. Gebruik je een ander tekstverwerkingsprogramma, dan kun je ook deelnemen. Hou er wel rekening mee dat iconen, omschrijvingen en opties kunnen verschillen. Deze lessenreeks is geschikt voor mensen met weinig tot geen kennis van Word.',
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
@@ -68,7 +69,7 @@ const workshopList = [
         'toestel up to date houden',
       ],
       extra:
-        'Gelieve uw eigen toestel mee te brengen. Op dag 3 is er voldoende tijd over voor verdieping. Deze lessenreeks is geschikt voor mensen met weinig tot geen ervaring met hun toestel.',
+        'Gelieve uw eigen toestel mee te brengen (smartphone / tablet). Op dag 3 is er voldoende tijd over voor verdieping. Deze lessenreeks is geschikt voor mensen met weinig tot geen ervaring met hun toestel.',
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
@@ -93,7 +94,8 @@ const workshopList = [
         'opslag beheren',
         "collage maken met Google Foto's",
       ],
-      extra: 'Gelieve uw eigen toestel mee te brengen.',
+      extra:
+        'Gelieve uw eigen toestel mee te brengen. (smartphone / tablet / laptop)',
     },
     status: 'volzet of # plaatsen beschikbaar',
   },

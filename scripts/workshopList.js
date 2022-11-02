@@ -2,6 +2,7 @@ console.log('workshopList loaded');
 
 const workshopList = [
   // WORKSHOP 1
+  /*
   {
     value: 'google',
     titel: 'Google Apps: GMail, Drive & Photos',
@@ -27,6 +28,7 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
+  */
   // WORKSHOP 2
   {
     value: 'word',

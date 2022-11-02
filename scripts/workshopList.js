@@ -34,7 +34,7 @@ const workshopList = [
     value: 'word',
     titel: 'Microsoft Word voor beginners',
     datum: '8, 9 & 10 november',
-    tijd: '10u tot 12u',
+    tijd: '14u tot 16u',
     locatie: 'Vlaamsekaai 10',
     inschrijving: 'https://forms.office.com/r/6CnCb7zk0R',
     info: {
@@ -80,7 +80,7 @@ const workshopList = [
     value: 'google',
     titel: 'Google Apps: GMail, Drive & Photos',
     datum: '22, 23 & 24 november',
-    tijd: '10u tot 12u',
+    tijd: '14u tot 16u',
     locatie: 'Vlaamsekaai 10',
     inschrijving: 'https://forms.office.com/r/bVQf2TJuym',
     info: {

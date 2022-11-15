@@ -30,6 +30,7 @@ const workshopList = [
   },
   */
   // WORKSHOP 2
+  /*
   {
     value: 'word',
     titel: 'Microsoft Word voor beginners',
@@ -52,6 +53,7 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
+  */
   // WORKSHOP 3
   {
     value: 'android',

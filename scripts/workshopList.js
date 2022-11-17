@@ -55,6 +55,7 @@ const workshopList = [
   },
   */
   // WORKSHOP 3
+  /*
   {
     value: 'android',
     titel: '  Basis Android',
@@ -77,6 +78,7 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
+  */
   // WORKSHOP 4
   {
     value: 'google',

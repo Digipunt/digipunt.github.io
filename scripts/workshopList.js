@@ -80,6 +80,7 @@ const workshopList = [
   },
   */
   // WORKSHOP 4
+  /*
   {
     value: 'google',
     titel: 'Google Apps: GMail, Drive & Photos',
@@ -105,4 +106,5 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   },
+  */
 ];

@@ -107,4 +107,21 @@ const workshopList = [
     status: 'volzet of # plaatsen beschikbaar',
   },
   */
+  // WORKSHOP 5
+
+  {
+    value: '',
+    titel: '',
+    datum: '',
+    tijd: '',
+    locatie: '',
+    inschrijving: '',
+    info: {
+      beschrijving:
+        'Dierbare klanten, Graag zijn we u van dienst met ons gans Ateljeevzw Digipunten team. We wensen jullie fijne feestdagen toe. En staan ook in 2023 voor jullie klaar met hulp, advies en ondersteuning bij al jullie digitale vragen.',
+      onderwerpen: [],
+      extra: '',
+    },
+    status: 'volzet of # plaatsen beschikbaar',
+  },
 ];

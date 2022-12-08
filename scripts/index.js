@@ -1,4 +1,5 @@
 console.log('index loaded');
+console.log(workshopList);
 
 window.onload = function () {
   let workshopEl = document.getElementById('workshop');
@@ -36,6 +37,13 @@ window.onload = function () {
     workshopInschrijving.classList.add('inschrijven');
     // buttonsDiv.appendChild(workshopInschrijving);
 
+    let kerstBoodschap = document.createElement('p');
+    kerstBoodschap.innerHTML = `Dierbare klanten, graag zijn we u van dienst met ons gans Ateljeevzw Digipunten team. We wensen jullie fijne feestdagen toe. En staan ook in 2023 voor jullie klaar met hulp, advies en ondersteuning bij al jullie digitale vragen.
+      <br />
+      <br />
+      Vanaf volgend jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`;
+    workshopItem.appendChild(kerstBoodschap);
+    /* 
     // LINK MEER INFO
     let workshopInfo = document.createElement('a');
     workshopInfo.href = `./workshops.html`;
@@ -52,7 +60,7 @@ window.onload = function () {
     tempSignup.textContent =
       'Inschrijven in het Digipunt, via mail: digipunten@ateljeevzw.be of 0490 44 65 42';
     workshopItem.appendChild(tempSignup);
-
+ */
     // WORKSHOP ITEM TOEVOEGEN
     workshopEl.appendChild(workshopItem);
   }

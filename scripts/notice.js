@@ -1,7 +1,7 @@
-let state = false;
+let state = true;
 
 let boodschap = {
-  titel: 'Mededeling',
+  titel: 'Aangepaste openingsuren',
   inhoud:
-    'Op donderdag 6 oktober zijn onze Digipunten gesloten wegens teamuitstap. Dank voor uw begrip.',
+    'Vrijdag 23/12 is het Digipunt Vlaamsekaai in de namiddag gesloten. Vrijdag 30/12 is het Digipunt Vlaamsekaai de hele dag gesloten. Dank voor uw begrip.',
 };

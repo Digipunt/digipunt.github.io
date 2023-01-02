@@ -45,13 +45,6 @@ const locations = [
   },
   {
     type: 'kringwinkel',
-    naam: 'Inloopcentrum Pannestraat',
-    adres: 'Pannestraat 1',
-    kaart:
-      'https://maps.google.com/maps?ll=51.063016,3.703848&z=17&t=m&hl=nl&gl=US&mapclient=embed&cid=17902190221424671933',
-  },
-  {
-    type: 'kringwinkel',
     naam: 'IN-Gent Kongostraat',
     adres: 'Kongostraat 42',
     kaart:

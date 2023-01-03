@@ -32,7 +32,7 @@ window.onload = function () {
 
     workshopDescription.textContent = workshopList[i].info.beschrijving;
     workshopExtra.textContent = workshopList[i].info.extra;
-    subjectHeader.textContent = 'Wat komt er aan bod:';
+    // subjectHeader.textContent = 'Wat komt er aan bod:';
     for (let j = 0; j < workshopList[i].info.onderwerpen.length; j++) {
       let subject = document.createElement('li');
       subject.textContent = workshopList[i].info.onderwerpen[j];
@@ -46,7 +46,7 @@ window.onload = function () {
 
     workshopMaps.href = 'https://goo.gl/maps/Uufdo4RNYUSxbP1e9';
     workshopMaps.target = '_blank';
-    workshopMaps.textContent = 'toon op kaart';
+    // workshopMaps.textContent = 'toon op kaart';
 
     // FILL HEADER
     workshopHeader.appendChild(workshopTitel);

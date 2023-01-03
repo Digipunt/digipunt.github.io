@@ -20,6 +20,11 @@ const watersportbaanUren = {
   donderdag: '15u30 - 18u00',
 };
 
+const rabotUren = {
+  dinsdag: '13u30 - 16u30',
+  donderdag: '09u00 - 12u00 & 13u30 - 16u30',
+};
+
 // LOCATIONS ARRAY
 const locations = [
   {
@@ -70,5 +75,11 @@ const locations = [
     adres: 'Blazoenstraat 9',
     kaart:
       'https://maps.google.com/maps?ll=51.062615,3.697218&z=17&t=m&hl=nl&gl=US&mapclient=embed&cid=14531396637240499202',
+  },
+  {
+    type: 'rabot',
+    naam: 'Wijkkantoor Rabot',
+    adres: 'Griendeplein 16',
+    kaart: 'https://goo.gl/maps/Lc2Cp3nMrXcUWehd7',
   },
 ];

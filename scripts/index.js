@@ -93,6 +93,18 @@ window.onload = function () {
       extra.innerHTML = kringwinkelUren.extra;
     }
 
+    // WIJKKANTOOR RABOT
+    if (locations[i].type == 'rabot') {
+      for (let key in rabotUren) {
+        let locationDay = document.createElement('h3');
+        let locationDayHours = document.createElement('p');
+        locationDay.innerHTML = key;
+        locationDayHours.innerHTML = rabotUren[key];
+        locationItem.appendChild(locationDay);
+        locationItem.appendChild(locationDayHours);
+      }
+    }
+
     // BIBS
     // KROOK
     if (locations[i].type == 'krook') {

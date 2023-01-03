@@ -22,7 +22,7 @@ const watersportbaanUren = {
 
 const rabotUren = {
   dinsdag: '13u30 - 16u30',
-  donderdag: '09u00 - 12u00 & 13u30 - 16u30',
+  donderdag: { am: '09u00 - 12u00', pm: '13u30 - 16u30' },
 };
 
 // LOCATIONS ARRAY

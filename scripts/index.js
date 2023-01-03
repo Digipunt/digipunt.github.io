@@ -1,5 +1,4 @@
 console.log('index loaded');
-console.log(workshopList);
 
 window.onload = function () {
   let workshopEl = document.getElementById('workshop');
@@ -95,14 +94,19 @@ window.onload = function () {
 
     // WIJKKANTOOR RABOT
     if (locations[i].type == 'rabot') {
-      for (let key in rabotUren) {
-        let locationDay = document.createElement('h3');
-        let locationDayHours = document.createElement('p');
-        locationDay.innerHTML = key;
-        locationDayHours.innerHTML = rabotUren[key];
-        locationItem.appendChild(locationDay);
-        locationItem.appendChild(locationDayHours);
-      }
+      let locationDayOne = document.createElement('h3');
+      let locationDayTwo = document.createElement('h3');
+      let locationDayOneHours = document.createElement('p');
+      let locationDayTwoHours = document.createElement('p');
+      locationDayOne.innerHTML = Object.keys(rabotUren)[0];
+      locationDayTwo.innerHTML = Object.keys(rabotUren)[1];
+      locationDayOneHours.innerHTML = rabotUren.dinsdag;
+      locationDayTwoHours.innerHTML =
+        rabotUren.donderdag.am + '<br>' + rabotUren.donderdag.pm;
+      locationItem.appendChild(locationDayOne);
+      locationItem.appendChild(locationDayOneHours);
+      locationItem.appendChild(locationDayTwo);
+      locationItem.appendChild(locationDayTwoHours);
     }
 
     // BIBS

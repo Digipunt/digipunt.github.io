@@ -37,10 +37,7 @@ window.onload = function () {
     // buttonsDiv.appendChild(workshopInschrijving);
 
     let kerstBoodschap = document.createElement('p');
-    kerstBoodschap.innerHTML = `Dierbare klanten, graag zijn we u van dienst met ons gans Ateljeevzw Digipunten team. We wensen jullie fijne feestdagen toe. En staan ook in 2023 voor jullie klaar met hulp, advies en ondersteuning bij al jullie digitale vragen.
-      <br />
-      <br />
-      Vanaf volgend jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`;
+    kerstBoodschap.innerHTML = `Dierbare klanten, in de loop van het komende jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`;
     workshopItem.appendChild(kerstBoodschap);
     /* 
     // LINK MEER INFO

@@ -117,8 +117,7 @@ const workshopList = [
     locatie: '',
     inschrijving: '',
     info: {
-      beschrijving: `Dierbare klanten, graag zijn we u van dienst met ons gans Ateljeevzw Digipunten team. We wensen jullie fijne feestdagen toe. En staan ook in 2023 voor jullie klaar met hulp, advies en ondersteuning bij al jullie digitale vragen.
-      Vanaf volgend jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`,
+      beschrijving: `Dierbare klanten, in de loop van het komende jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`,
       onderwerpen: [],
       extra: '',
     },

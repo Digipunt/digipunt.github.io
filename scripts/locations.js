@@ -10,14 +10,14 @@ const kringwinkelUren = {
 const krookDagen = 'maandag tot zaterdag';
 
 const brugsepoortUren = {
-  dinsdag: '15u30 - 18u00',
-  zaterdag: '10u00 - 12u30',
-};
-
-const watersportbaanUren = {
   maandag: '15u30 - 18u00',
   woensdag: '14u00 - 17u00',
   donderdag: '15u30 - 18u00',
+};
+
+const watersportbaanUren = {
+  dinsdag: '15u30 - 18u00',
+  zaterdag: '10u00 - 12u30',
 };
 
 const rabotUren = {

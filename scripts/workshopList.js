@@ -109,7 +109,7 @@ const workshopList = [
   */
   // WORKSHOP 5
 
-  {
+  /*   {
     value: '',
     titel: '',
     datum: '',
@@ -120,6 +120,23 @@ const workshopList = [
       beschrijving: `Dierbare klanten, in de loop van het komende jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`,
       onderwerpen: [],
       extra: '',
+    },
+    status: 'volzet of # plaatsen beschikbaar',
+  }, */
+  {
+    value: 'itsme',
+    titel: 'Workshops itsme®',
+    datum: '<strong>16 & 19 mei || 7 & 22 juni</strong>',
+    tijd: '<strong>10u tot 12u</strong>',
+    locatie:
+      '<strong><a href="https://dezuidpoortgent.be/contact/">De Zuidpoort vzw</a> <br> Rerum-Novarumplein 25</strong>',
+    inschrijving:
+      'Inschrijven via <a href="digipunten@ateljeevzw.be">digipunten@ateljeevzw.be</a>',
+    info: {
+      beschrijving: '',
+      onderwerpen: [],
+      extra:
+        'Om de app van itsme® te gebruiken heeft u het volgende nodig:<ul><li>Smartphone</li><li>Elektronische identiteitskaart + pincode</li><li>Geldig e-mail adres</li></ul>',
     },
     status: 'volzet of # plaatsen beschikbaar',
   },

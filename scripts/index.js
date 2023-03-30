@@ -25,20 +25,40 @@ window.onload = function () {
     workshopTijd.innerHTML = workshopList[i].tijd;
     workshopItem.appendChild(workshopTijd);
 
+    // LOCATIE WORKSHOP
+    let workshopLocatie = document.createElement('p');
+    workshopLocatie.innerHTML = workshopList[i].locatie;
+    workshopItem.appendChild(workshopLocatie);
+
+    // INSCHRIJVEN WORKSHOP
+    let workshopInschrijving = document.createElement('p');
+    workshopInschrijving.innerHTML = workshopList[i].inschrijving;
+    workshopItem.appendChild(workshopInschrijving);
+
+    // BESCHRIJVING WORKSHOP
+    let workshopBeschrijving = document.createElement('p');
+    workshopBeschrijving.innerHTML = workshopList[i].info.beschrijving;
+    workshopItem.appendChild(workshopBeschrijving);
+
+    // EXTRA INFO WORKSHOP
+    let workshopExtra = document.createElement('p');
+    workshopExtra.innerHTML = workshopList[i].info.extra;
+    workshopItem.appendChild(workshopExtra);
+
     // BUTTONS DIV
-    let buttonsDiv = document.createElement('div');
-    buttonsDiv.classList.add('buttons-div');
+    // let buttonsDiv = document.createElement('div');
+    // buttonsDiv.classList.add('buttons-div');
 
     // LINK INSCHRIJVING
-    let workshopInschrijving = document.createElement('a');
-    workshopInschrijving.href = workshopList[i].inschrijving;
-    workshopInschrijving.innerHTML = 'nu inschrijven';
-    workshopInschrijving.classList.add('inschrijven');
+    // let workshopInschrijving = document.createElement('a');
+    // workshopInschrijving.href = workshopList[i].inschrijving;
+    // workshopInschrijving.innerHTML = 'nu inschrijven';
+    // workshopInschrijving.classList.add('inschrijven');
     // buttonsDiv.appendChild(workshopInschrijving);
 
-    let kerstBoodschap = document.createElement('p');
-    kerstBoodschap.innerHTML = `Dierbare klanten, in de loop van het komende jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`;
-    workshopItem.appendChild(kerstBoodschap);
+    // let kerstBoodschap = document.createElement('p');
+    // kerstBoodschap.innerHTML = `Dierbare klanten, in de loop van het komende jaar organiseren we opnieuw workshops, hou deze pagina dus zeker in de gaten!`;
+    // workshopItem.appendChild(kerstBoodschap);
     /* 
     // LINK MEER INFO
     let workshopInfo = document.createElement('a');

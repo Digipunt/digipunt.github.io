@@ -44,9 +44,9 @@ window.onload = function () {
     signUp.target = '_blank';
     signUp.textContent = 'nu inschrijven';
 
-    workshopMaps.href = 'https://goo.gl/maps/Uufdo4RNYUSxbP1e9';
+    workshopMaps.href = 'https://goo.gl/maps/eSyMnkRVEEm78Abn9';
     workshopMaps.target = '_blank';
-    // workshopMaps.textContent = 'toon op kaart';
+    workshopMaps.textContent = 'toon op kaart';
 
     // FILL HEADER
     workshopHeader.appendChild(workshopTitel);

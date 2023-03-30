@@ -127,7 +127,7 @@ const workshopList = [
     value: 'itsme',
     titel: 'Workshops itsme®',
     datum: '<strong>16 & 19 mei || 7 & 22 juni</strong>',
-    tijd: '<strong>10u tot 12u</strong>',
+    tijd: '<strong>9u tot 11u</strong>',
     locatie:
       '<strong><a href="https://dezuidpoortgent.be/contact/">De Zuidpoort vzw</a> <br> Rerum-Novarumplein 25</strong>',
     inschrijving:

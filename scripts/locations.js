@@ -99,6 +99,6 @@ const locations = [
     type: 'popup',
     naam: 'De Woonkamer',
     adres: 'August Vermeylenstraat 5' + '</br>' + '1ste verdiep',
-    kaart: 'https://goo.gl/maps/nWRULCY1dGPQ2ftu5',
+    kaart: 'https://goo.gl/maps/cVZqLgDKz8HEghSSA',
   },
 ];

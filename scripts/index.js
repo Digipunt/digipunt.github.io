@@ -5,6 +5,25 @@ window.onload = function () {
   let locationEl = document.getElementById('location');
 
   // WORKSHOPS GENEREREN OP PAGINA VOLGENS SCRIPTS/WORKSHOPS.JS
+  if (workshopList.length == 0) {
+    console.log('no workshops');
+    // WORKSHOP ITEM AANMAKEN
+    let workshopItem = document.createElement('div');
+    workshopItem.classList.add('workshop-item');
+
+    // TITEL WORKSHOP
+    let workshopTitel = document.createElement('h1');
+    workshopTitel.innerHTML = 'Op dit ogenblik staan er geen workshops gepland';
+    workshopItem.appendChild(workshopTitel);
+
+    // BESCHRIJVING WORKSHOP
+    let workshopBeschrijving = document.createElement('p');
+    workshopBeschrijving.innerHTML =
+      'Toekomstige workshops worden hier aangekondigd.';
+    workshopItem.appendChild(workshopBeschrijving);
+
+    workshopEl.appendChild(workshopItem);
+  }
   for (let i = 0; i < workshopList.length; i++) {
     // WORKSHOP ITEM AANMAKEN
     let workshopItem = document.createElement('div');
@@ -126,14 +145,6 @@ window.onload = function () {
       locationItem.appendChild(locationDayTwoHours);
     }
 
-    // BIBS
-    // KROOK
-    if (locations[i].type == 'krook') {
-      locationDays.innerHTML = krookDagen;
-      locationHours.innerHTML =
-        kringwinkelUren.am + '<br>' + kringwinkelUren.pm;
-    }
-
     // BUURTHUIS SCHELDEOORD
     if (locations[i].type == 'buurthuis') {
       let locationDayOne = document.createElement('h3');
@@ -163,27 +174,23 @@ window.onload = function () {
 
     // EETCAFE TOREKE
     if (locations[i].type == 'toreke') {
-      let locationDayOne = document.createElement('h3');
-      let locationDayTwo = document.createElement('h3');
-      let locationDayThree = document.createElement('h3');
-      let locationDayOneHours = document.createElement('p');
-      let locationDayTwoHours = document.createElement('p');
-      let locationDayThreeHours = document.createElement('p');
-      locationDayOne.innerHTML = Object.keys(torekeUren)[0];
-      locationDayTwo.innerHTML = Object.keys(torekeUren)[1];
-      locationDayThree.innerHTML = Object.keys(torekeUren)[2];
-      locationDayOneHours.innerHTML =
-        torekeUren.maandag.am + '<br>' + torekeUren.maandag.pm;
-      locationDayTwoHours.innerHTML =
-        torekeUren.dinsdag.am + '<br>' + torekeUren.dinsdag.pm;
-      locationDayThreeHours.innerHTML =
-        torekeUren.woensdag.am + '<br>' + torekeUren.woensdag.pm;
-      locationItem.appendChild(locationDayOne);
-      locationItem.appendChild(locationDayOneHours);
-      locationItem.appendChild(locationDayTwo);
-      locationItem.appendChild(locationDayTwoHours);
-      locationItem.appendChild(locationDayThree);
-      locationItem.appendChild(locationDayThreeHours);
+      let locationDays = document.createElement('h3');
+      let locationHours = document.createElement('p');
+      locationDays.innerHTML = torekeUren.dagen;
+      locationHours.innerHTML =
+        torekeUren.uren.am + '<br>' + torekeUren.uren.pm;
+      locationItem.appendChild(locationDays);
+      locationItem.appendChild(locationHours);
+    }
+
+    // POPUP
+    if (locations[i].type == 'popup') {
+      let locationDays = document.createElement('h3');
+      let locationHours = document.createElement('p');
+      locationDays.innerHTML = Object.keys(popupUren)[0];
+      locationHours.innerHTML = popupUren.maandag;
+      locationItem.appendChild(locationDays);
+      locationItem.appendChild(locationHours);
     }
 
     locationItem.appendChild(locationDays);

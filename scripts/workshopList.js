@@ -108,7 +108,6 @@ const workshopList = [
   },
   */
   // WORKSHOP 5
-
   /*   {
     value: '',
     titel: '',
@@ -123,7 +122,7 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   }, */
-  {
+  /*   {
     value: 'itsme',
     titel: 'Workshops itsme®',
     datum: '<strong>16 & 19 mei || 7 & 22 juni</strong>',
@@ -139,5 +138,5 @@ const workshopList = [
         'Om de app van itsme® te gebruiken heeft u het volgende nodig:<ul><li>Smartphone</li><li>Elektronische identiteitskaart + pincode</li><li>Geldig e-mail adres</li></ul>',
     },
     status: 'volzet of # plaatsen beschikbaar',
-  },
+  }, */
 ];

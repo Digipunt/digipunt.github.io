@@ -7,8 +7,6 @@ const kringwinkelUren = {
   extra: 'dinsdagvoormiddag gesloten',
 };
 
-const krookDagen = 'maandag tot zaterdag';
-
 const brugsepoortUren = {
   maandag: '15u30 - 18u00',
   woensdag: '14u00 - 17u00',
@@ -30,14 +28,17 @@ const buurtHuisuren = {
 };
 
 const torekeUren = {
-  maandag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
-  dinsdag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
-  woensdag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
+  dagen: 'maandag, dinsdag & woensdag',
+  uren: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
 };
 
 const serreUren = {
   dinsdag: '13u30 - 17u00',
   vrijdag: { am: '09u00 - 12u00', pm: '13u00 - 17u00' },
+};
+
+const popupUren = {
+  maandag: '13u30 - 16:30',
 };
 
 // LOCATIONS ARRAY
@@ -71,13 +72,6 @@ const locations = [
       'https://maps.google.com/maps?ll=51.060779,3.731428&z=17&t=m&hl=nl&gl=US&mapclient=embed&cid=9617621218421166756',
   },
   {
-    type: 'krook',
-    naam: 'Bibliotheek De Krook',
-    adres: 'Miriam Makebaplein 1',
-    kaart:
-      'https://maps.google.com/maps?ll=51.048604,3.728687&z=17&t=m&hl=nl&gl=US&mapclient=embed&cid=11176294349727647781',
-  },
-  {
     type: 'rabot',
     naam: 'Wijkkantoor Rabot',
     adres: 'Griendeplein 16',
@@ -99,6 +93,12 @@ const locations = [
     type: 'toreke',
     naam: 'Eetcafé Toreke',
     adres: 'Vlotstraat 22',
+    kaart: 'https://goo.gl/maps/nWRULCY1dGPQ2ftu5',
+  },
+  {
+    type: 'popup',
+    naam: 'De Woonkamer',
+    adres: 'August Vermeylenstraat 5' + '</br>' + '1ste verdiep',
     kaart: 'https://goo.gl/maps/nWRULCY1dGPQ2ftu5',
   },
 ];

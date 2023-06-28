@@ -2,6 +2,7 @@ console.log('workshops loaded');
 
 window.onload = function () {
   let workshopCards = document.getElementById('workshopCards');
+
   for (let i = 0; i < workshopList.length; i++) {
     // ELEMENTS
     let workshopCard = document.createElement('div');

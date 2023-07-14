@@ -1,11 +1,11 @@
 let state = true;
 
 let boodschap = {
-  titel: 'Pop-up Digipunt',
+  titel: 'Digitale Wandeling',
   inhoud:
-    '<strong>De Woonkamer</strong>' +
-    '</br></br>' +
-    'August Vermeylenstraat 5' +
+    'woensdag 19/07, 10u & 15u' +
     '</br>' +
-    'maandag van 13u30 tot 16u30',
+    'donderdag 20/07, 10u & 15u' +
+    '</br></br>' +
+    'Meer info onderaan de pagina',
 };

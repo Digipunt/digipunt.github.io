@@ -1,5 +1,3 @@
-console.log('locations loaded');
-
 const kringwinkelUren = {
   am: '10u00 - 12u00',
   pm: '13u00 - 17u00',

@@ -7,5 +7,5 @@ let boodschap = {
     '</br>' +
     'donderdag 20/07, 10u & 15u' +
     '</br></br>' +
-    'Meer info onderaan de pagina',
+    '<a href="#workshop">Meer info</a>',
 };

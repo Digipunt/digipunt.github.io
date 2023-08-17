@@ -19,8 +19,10 @@ const watersportbaanUren = {
 };
 
 const rabotUren = {
-  dinsdag: '13u30 - 16u30',
-  donderdag: { am: '09u00 - 12u00', pm: '13u30 - 16u30' },
+  maandag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
+  dinsdag: '13u30 - 16u00',
+  woensdag: '13u30 - 16u00',
+  donderdag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
 };
 
 const buurtHuisuren = {
@@ -28,8 +30,8 @@ const buurtHuisuren = {
 };
 
 const torekeUren = {
-  dagen: 'maandag, dinsdag & woensdag',
-  uren: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
+  woensdag: '09u00 - 12u30',
+  vrijdag: { am: '09u00 - 12u00', pm: '13u00 - 17u00' },
 };
 
 const serreUren = {
@@ -80,8 +82,8 @@ const locations = [
   {
     type: 'buurthuis',
     naam: 'Buurthuis Scheldeoord',
-    adres: 'Tarbotstraat 61 a',
-    kaart: 'https://goo.gl/maps/WqjWeEUTXiidaQ4k9',
+    adres: 'Wolterslaan 16',
+    kaart: 'https://goo.gl/maps/YH9KRpn7pt2sXUGX6',
   },
   {
     type: 'de serre',

@@ -126,22 +126,28 @@ window.onload = function () {
         extra.innerHTML = kringwinkelUren.extra;
       }
 
-      // WIJKKANTOOR RABOT
-      if (locations[i].type == 'rabot') {
-        let locationDayOne = document.createElement('h3');
-        let locationDayTwo = document.createElement('h3');
-        let locationDayOneHours = document.createElement('p');
-        let locationDayTwoHours = document.createElement('p');
-        locationDayOne.innerHTML = Object.keys(rabotUren)[0];
-        locationDayTwo.innerHTML = Object.keys(rabotUren)[1];
-        locationDayOneHours.innerHTML = rabotUren.dinsdag;
-        locationDayTwoHours.innerHTML =
-          rabotUren.donderdag.am + '<br>' + rabotUren.donderdag.pm;
-        locationItem.appendChild(locationDayOne);
-        locationItem.appendChild(locationDayOneHours);
-        locationItem.appendChild(locationDayTwo);
-        locationItem.appendChild(locationDayTwoHours);
-      }
+    // WIJKKANTOOR RABOT
+    if (locations[i].type == 'rabot') {
+      let locationDayOne = document.createElement('h3');
+      let locationDayTwo = document.createElement('h3');
+      //
+      let locationDayOneHours = document.createElement('p');
+      let locationDayTwoHours = document.createElement('p');
+      //
+      locationDayOne.innerHTML =
+        Object.keys(rabotUren)[0] + ' & ' + Object.keys(rabotUren)[3];
+      locationDayTwo.innerHTML =
+        Object.keys(rabotUren)[1] + ' & ' + Object.keys(rabotUren)[2];
+      //
+      locationDayOneHours.innerHTML =
+        rabotUren.maandag.am + '<br>' + rabotUren.maandag.pm;
+      locationDayTwoHours.innerHTML = rabotUren.dinsdag;
+      //
+      locationItem.appendChild(locationDayOne);
+      locationItem.appendChild(locationDayOneHours);
+      locationItem.appendChild(locationDayTwo);
+      locationItem.appendChild(locationDayTwoHours);
+    }
 
       // BUURTHUIS SCHELDEOORD
       if (locations[i].type == 'buurthuis') {
@@ -170,16 +176,22 @@ window.onload = function () {
         locationItem.appendChild(locationDayTwoHours);
       }
 
-      // EETCAFE TOREKE
-      if (locations[i].type == 'toreke') {
-        let locationDays = document.createElement('h3');
-        let locationHours = document.createElement('p');
-        locationDays.innerHTML = torekeUren.dagen;
-        locationHours.innerHTML =
-          torekeUren.uren.am + '<br>' + torekeUren.uren.pm;
-        locationItem.appendChild(locationDays);
-        locationItem.appendChild(locationHours);
-      }
+    // EETCAFE TOREKE
+    if (locations[i].type == 'toreke') {
+      let locationDayOne = document.createElement('h3');
+      let locationDayTwo = document.createElement('h3');
+      let locationDayOneHours = document.createElement('p');
+      let locationDayTwoHours = document.createElement('p');
+      locationDayOne.innerHTML = Object.keys(torekeUren)[0];
+      locationDayOneHours.innerHTML = torekeUren.woensdag;
+      locationDayTwo.innerHTML = Object.keys(torekeUren)[1];
+      locationDayTwoHours.innerHTML =
+        torekeUren.vrijdag.am + '<br>' + torekeUren.vrijdag.pm;
+      locationItem.appendChild(locationDayOne);
+      locationItem.appendChild(locationDayOneHours);
+      locationItem.appendChild(locationDayTwo);
+      locationItem.appendChild(locationDayTwoHours);
+    }
 
       // POPUP
       if (locations[i].type == 'popup') {

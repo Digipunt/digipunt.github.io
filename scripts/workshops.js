@@ -1,5 +1,3 @@
-console.log('workshops loaded');
-
 window.onload = function () {
   let workshopCards = document.getElementById('workshopCards');
 

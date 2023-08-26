@@ -1,12 +1,9 @@
-console.log('index loaded');
-
 window.onload = function () {
   let workshopEl = document.getElementById('workshop');
   let locationEl = document.getElementById('location');
 
   // WORKSHOPS GENEREREN OP PAGINA VOLGENS SCRIPTS/WORKSHOPS.JS
   if (workshopList.length == 0) {
-    console.log('no workshops');
     // WORKSHOP ITEM AANMAKEN
     let workshopItem = document.createElement('div');
     workshopItem.classList.add('workshop-item');
@@ -101,32 +98,33 @@ window.onload = function () {
   }
 
   // LOCATIONS GENEREREN OP PAGINA VOLGENS LOCATIONS.JS
-  for (let i = 0; i < locations.length; i++) {
-    let locationItem = document.createElement('div');
-    locationItem.classList.add('location-item');
+  if (locationEl !== null)
+    for (let i = 0; i < locations.length; i++) {
+      let locationItem = document.createElement('div');
+      locationItem.classList.add('location-item');
 
-    // NAAM
-    let locationNaam = document.createElement('h1');
-    locationNaam.innerHTML = locations[i].naam;
-    locationItem.appendChild(locationNaam);
+      // NAAM
+      let locationNaam = document.createElement('h1');
+      locationNaam.innerHTML = locations[i].naam;
+      locationItem.appendChild(locationNaam);
 
-    // ADRES
-    let locationAdres = document.createElement('p');
-    locationAdres.innerHTML = locations[i].adres;
-    locationItem.appendChild(locationAdres);
+      // ADRES
+      let locationAdres = document.createElement('p');
+      locationAdres.innerHTML = locations[i].adres;
+      locationItem.appendChild(locationAdres);
 
-    // UREN
-    let locationDays = document.createElement('h3');
-    let locationHours = document.createElement('p');
-    let extra = document.createElement('p');
+      // UREN
+      let locationDays = document.createElement('h3');
+      let locationHours = document.createElement('p');
+      let extra = document.createElement('p');
 
-    // KRINGWINKELS
-    if (locations[i].type == 'kringwinkel') {
-      locationDays.innerHTML = kringwinkelUren.dagen;
-      locationHours.innerHTML =
-        kringwinkelUren.am + '<br>' + kringwinkelUren.pm;
-      extra.innerHTML = kringwinkelUren.extra;
-    }
+      // KRINGWINKELS
+      if (locations[i].type == 'kringwinkel') {
+        locationDays.innerHTML = kringwinkelUren.dagen;
+        locationHours.innerHTML =
+          kringwinkelUren.am + '<br>' + kringwinkelUren.pm;
+        extra.innerHTML = kringwinkelUren.extra;
+      }
 
     // WIJKKANTOOR RABOT
     if (locations[i].type == 'rabot') {
@@ -151,32 +149,32 @@ window.onload = function () {
       locationItem.appendChild(locationDayTwoHours);
     }
 
-    // BUURTHUIS SCHELDEOORD
-    if (locations[i].type == 'buurthuis') {
-      let locationDayOne = document.createElement('h3');
-      let locationDayOneHours = document.createElement('p');
-      locationDayOne.innerHTML = Object.keys(buurtHuisuren)[0];
-      locationDayOneHours.innerHTML = buurtHuisuren.maandag;
-      locationItem.appendChild(locationDayOne);
-      locationItem.appendChild(locationDayOneHours);
-    }
+      // BUURTHUIS SCHELDEOORD
+      if (locations[i].type == 'buurthuis') {
+        let locationDayOne = document.createElement('h3');
+        let locationDayOneHours = document.createElement('p');
+        locationDayOne.innerHTML = Object.keys(buurtHuisuren)[0];
+        locationDayOneHours.innerHTML = buurtHuisuren.maandag;
+        locationItem.appendChild(locationDayOne);
+        locationItem.appendChild(locationDayOneHours);
+      }
 
-    // DE SERRE
-    if (locations[i].type == 'de serre') {
-      let locationDayOne = document.createElement('h3');
-      let locationDayTwo = document.createElement('h3');
-      let locationDayOneHours = document.createElement('p');
-      let locationDayTwoHours = document.createElement('p');
-      locationDayOne.innerHTML = Object.keys(serreUren)[0];
-      locationDayOneHours.innerHTML = serreUren.dinsdag;
-      locationDayTwo.innerHTML = Object.keys(serreUren)[1];
-      locationDayTwoHours.innerHTML =
-        serreUren.vrijdag.am + '<br>' + serreUren.vrijdag.pm;
-      locationItem.appendChild(locationDayOne);
-      locationItem.appendChild(locationDayOneHours);
-      locationItem.appendChild(locationDayTwo);
-      locationItem.appendChild(locationDayTwoHours);
-    }
+      // DE SERRE
+      if (locations[i].type == 'de serre') {
+        let locationDayOne = document.createElement('h3');
+        let locationDayTwo = document.createElement('h3');
+        let locationDayOneHours = document.createElement('p');
+        let locationDayTwoHours = document.createElement('p');
+        locationDayOne.innerHTML = Object.keys(serreUren)[0];
+        locationDayOneHours.innerHTML = serreUren.dinsdag;
+        locationDayTwo.innerHTML = Object.keys(serreUren)[1];
+        locationDayTwoHours.innerHTML =
+          serreUren.vrijdag.am + '<br>' + serreUren.vrijdag.pm;
+        locationItem.appendChild(locationDayOne);
+        locationItem.appendChild(locationDayOneHours);
+        locationItem.appendChild(locationDayTwo);
+        locationItem.appendChild(locationDayTwoHours);
+      }
 
     // EETCAFE TOREKE
     if (locations[i].type == 'toreke') {
@@ -195,29 +193,29 @@ window.onload = function () {
       locationItem.appendChild(locationDayTwoHours);
     }
 
-    // POPUP
-    if (locations[i].type == 'popup') {
-      let locationDays = document.createElement('h3');
-      let locationHours = document.createElement('p');
-      locationDays.innerHTML = Object.keys(popupUren)[0];
-      locationHours.innerHTML = popupUren.maandag;
+      // POPUP
+      if (locations[i].type == 'popup') {
+        let locationDays = document.createElement('h3');
+        let locationHours = document.createElement('p');
+        locationDays.innerHTML = Object.keys(popupUren)[0];
+        locationHours.innerHTML = popupUren.maandag;
+        locationItem.appendChild(locationDays);
+        locationItem.appendChild(locationHours);
+      }
+
       locationItem.appendChild(locationDays);
       locationItem.appendChild(locationHours);
+      locationItem.appendChild(extra);
+
+      // TOON OP KAART - LINK NAAR GOOGLE MAPS
+      let locationLink = document.createElement('a');
+      locationLink.href = locations[i].kaart;
+      locationLink.target = '_blank';
+      locationLink.innerHTML = 'toon op kaart';
+      locationItem.appendChild(locationLink);
+
+      locationEl.appendChild(locationItem);
     }
-
-    locationItem.appendChild(locationDays);
-    locationItem.appendChild(locationHours);
-    locationItem.appendChild(extra);
-
-    // TOON OP KAART - LINK NAAR GOOGLE MAPS
-    let locationLink = document.createElement('a');
-    locationLink.href = locations[i].kaart;
-    locationLink.target = '_blank';
-    locationLink.innerHTML = 'toon op kaart';
-    locationItem.appendChild(locationLink);
-
-    locationEl.appendChild(locationItem);
-  }
 
   // NOTIFICATIE TONEN OP BASIS VAN NOTICE.JS
   let notification = document.getElementById('notification');

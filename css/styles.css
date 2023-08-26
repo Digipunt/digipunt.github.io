@@ -290,3 +290,8 @@ p {
 .temp-signup {
   margin-top: 40px;
 }
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}

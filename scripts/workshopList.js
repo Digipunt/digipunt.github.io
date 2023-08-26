@@ -1,5 +1,3 @@
-console.log('workshopList loaded');
-
 const workshopList = [
   // WORKSHOP 1
   /*

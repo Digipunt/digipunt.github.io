@@ -139,20 +139,20 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   }, */
-  /*   {
+  {
     value: 'digiwalk',
     titel: 'Digitale Wandeling',
-    datum: '<strong>19 & 20 juli</strong>',
+    datum: '<strong>29 september</strong>',
     tijd: '<strong>10u & 15u</strong>',
     locatie:
       '<strong><a href="https://goo.gl/maps/bigMxang7DGCqEDL9">SMAK Stedelijk Museum voor Actuele Kunst</a> <br> Jan Hoetplein 1</strong>',
     inschrijving: '',
     info: {
       beschrijving:
-        'Op 19/07 en 20/07 organiseert het Digipunt een gratis digitale wandeling in het Citadelpark.  We starten telkens om 10u en om 15u aan het SMAK. We doen een route van 3 km op een rustig tempo waar er voldoende tijd is om de volgende apps te gebruiken: Komoot, Google Lens, Birdnet, Obsidentify, Wildplukwijzer en leren we ook QR codes scannen (het is aangeraden de apps al op voorhand te downloaden). Er is geen wifi ter plaatse beschikbaar, de tocht gebeurt onder 4G/5G. Inschrijven is verplicht en kan via <a href="silvie.franck@ateljeevzw.be">silvie.franck@ateljeevzw.be</a>',
+        'Op vrijdag 29/09 organiseert Digipunt een gratis digitale wandeling in het Citadelpark. We starten om 10u en 15u aan het SMAK. <br><br> We doen een route van 3 km op een rustig tempo waar er voldoende tijd is om de volgende apps te gebruiken: Komoot, Google Lens, Birdnet, Obsidentify, Wildplukwijzer en leren we ook QR codes scannen (het is aangeraden de apps al op voorhand te downloaden). <br><br> Er is geen wifi ter plaatse beschikbaar, de tocht gebeurt onder 4G/5G.<br><br> Inschrijven is verplicht en kan via <a href="digipunten@ateljeevzw.be">digipunten@ateljeevzw.be</a> met vermelding van de dag 29/09 en het uur (10u of 15u).',
       onderwerpen: [],
       extra: '',
     },
     status: 'volzet of # plaatsen beschikbaar',
-  }, */
+  },
 ];

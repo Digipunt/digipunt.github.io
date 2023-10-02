@@ -1,4 +1,4 @@
-let state = true;
+let state = false;
 
 let boodschap = {
   titel: 'Digitale Wandeling 29/09',

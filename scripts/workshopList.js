@@ -139,7 +139,7 @@ const workshopList = [
     },
     status: 'volzet of # plaatsen beschikbaar',
   }, */
-  {
+  /*   {
     value: 'digiwalk',
     titel: 'Digitale Wandeling',
     datum: '<strong>29 september</strong>',
@@ -154,5 +154,5 @@ const workshopList = [
       extra: '',
     },
     status: 'volzet of # plaatsen beschikbaar',
-  },
+  }, */
 ];

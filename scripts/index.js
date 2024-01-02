@@ -132,23 +132,31 @@ window.onload = function () {
     if (locations[i].type == 'rabot') {
       let locationDayOne = document.createElement('h3');
       let locationDayTwo = document.createElement('h3');
+      let locationDayThree = document.createElement('h3');
       //
       let locationDayOneHours = document.createElement('p');
       let locationDayTwoHours = document.createElement('p');
+      let locationDayThreeHours = document.createElement('p');
       //
       locationDayOne.innerHTML =
-        Object.keys(rabotUren)[0] + ' & ' + Object.keys(rabotUren)[3];
-      locationDayTwo.innerHTML =
-        Object.keys(rabotUren)[1] + ' & ' + Object.keys(rabotUren)[2];
+        Object.keys(rabotUren)[0] +
+        ', ' +
+        Object.keys(rabotUren)[1] +
+        ' & ' +
+        Object.keys(rabotUren)[2];
+      // locationDayTwo.innerHTML = Object.keys(rabotUren)[1];
+      // locationDayThree.innerHTML = Object.keys(rabotUren)[2];
       //
-      locationDayOneHours.innerHTML =
-        rabotUren.maandag.am + '<br>' + rabotUren.maandag.pm;
-      locationDayTwoHours.innerHTML = rabotUren.dinsdag;
+      locationDayOneHours.innerHTML = rabotUren.maandag;
+      // locationDayTwoHours.innerHTML = rabotUren.donderdag;
+      // locationDayThreeHours.innerHTML = rabotUren.vrijdag;
       //
       locationItem.appendChild(locationDayOne);
       locationItem.appendChild(locationDayOneHours);
-      locationItem.appendChild(locationDayTwo);
-      locationItem.appendChild(locationDayTwoHours);
+      // locationItem.appendChild(locationDayTwo);
+      // locationItem.appendChild(locationDayTwoHours);
+      // locationItem.appendChild(locationDayThree);
+      // locationItem.appendChild(locationDayThreeHours);
     }
 
     // BUURTHUIS SCHELDEOORD
@@ -195,15 +203,15 @@ window.onload = function () {
       locationItem.appendChild(locationDayTwoHours);
     }
 
-    // POPUP
-    if (locations[i].type == 'popup') {
-      let locationDays = document.createElement('h3');
-      let locationHours = document.createElement('p');
-      locationDays.innerHTML = Object.keys(popupUren)[0];
-      locationHours.innerHTML = popupUren.maandag;
-      locationItem.appendChild(locationDays);
-      locationItem.appendChild(locationHours);
-    }
+    // // POPUP
+    // if (locations[i].type == 'popup') {
+    //   let locationDays = document.createElement('h3');
+    //   let locationHours = document.createElement('p');
+    //   locationDays.innerHTML = Object.keys(popupUren)[0];
+    //   locationHours.innerHTML = popupUren.maandag;
+    //   locationItem.appendChild(locationDays);
+    //   locationItem.appendChild(locationHours);
+    // }
 
     locationItem.appendChild(locationDays);
     locationItem.appendChild(locationHours);

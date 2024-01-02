@@ -3,7 +3,7 @@ console.log('locations loaded');
 const kringwinkelUren = {
   am: '10u00 - 12u00',
   pm: '13u00 - 17u00',
-  dagen: 'maandag tot vrijdag',
+  dagen: 'maandag tot en met vrijdag',
   extra: 'dinsdagvoormiddag gesloten',
 };
 
@@ -19,10 +19,9 @@ const watersportbaanUren = {
 };
 
 const rabotUren = {
-  maandag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
-  dinsdag: '13u30 - 16u00',
-  woensdag: '13u30 - 16u00',
-  donderdag: { am: '09u00 - 12u30', pm: '13u30 - 16u00' },
+  maandag: '09u00 - 12u00',
+  donderdag: '09u00 - 12u00',
+  vrijdag: '09u00 - 12u00',
 };
 
 const buurtHuisuren = {
@@ -97,10 +96,10 @@ const locations = [
     adres: 'Vlotstraat 22',
     kaart: 'https://goo.gl/maps/nWRULCY1dGPQ2ftu5',
   },
-  {
-    type: 'popup',
-    naam: 'De Woonkamer',
-    adres: 'August Vermeylenstraat 5' + '</br>' + '1ste verdiep',
-    kaart: 'https://goo.gl/maps/cVZqLgDKz8HEghSSA',
-  },
+  // {
+  //   type: 'popup',
+  //   naam: 'De Woonkamer',
+  //   adres: 'August Vermeylenstraat 5' + '</br>' + '1ste verdiep',
+  //   kaart: 'https://goo.gl/maps/cVZqLgDKz8HEghSSA',
+  // },
 ];

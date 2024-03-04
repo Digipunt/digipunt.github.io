@@ -7,6 +7,13 @@ const kringwinkelUren = {
   extra: 'dinsdagvoormiddag gesloten',
 };
 
+const amalUren = {
+  am: '09u00 - 12u00',
+  pm: '13u00 - 17u00',
+  dagen: 'maandag tot en met vrijdag',
+  extra: 'dinsdagvoormiddag gesloten',
+};
+
 const brugsepoortUren = {
   maandag: '15u30 - 18u00',
   woensdag: '14u00 - 17u00',
@@ -66,7 +73,7 @@ const locations = [
       'https://maps.google.com/maps?ll=51.071935,3.71407&z=17&t=m&hl=nl&gl=US&mapclient=embed&cid=2168621648512461089',
   },
   {
-    type: 'kringwinkel',
+    type: 'amal',
     naam: 'AMAL Gent',
     adres: 'Kongostraat 42',
     kaart:

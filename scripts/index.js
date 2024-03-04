@@ -128,6 +128,13 @@ window.onload = function () {
       extra.innerHTML = kringwinkelUren.extra;
     }
 
+    // AMAL
+    if (locations[i].type == 'amal') {
+      locationDays.innerHTML = amalUren.dagen;
+      locationHours.innerHTML = amalUren.am + '<br>' + amalUren.pm;
+      extra.innerHTML = amalUren.extra;
+    }
+
     // WIJKKANTOOR RABOT
     if (locations[i].type == 'rabot') {
       let locationDayOne = document.createElement('h3');

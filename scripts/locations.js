@@ -1,4 +1,4 @@
-console.log('locations loaded');
+console.log('locations.js loaded');
 
 const kringwinkelUren = {
   am: '10u00 - 12u00',

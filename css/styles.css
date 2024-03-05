@@ -86,10 +86,10 @@ p {
     rgba(255, 255, 255, 1) 40%,
     rgba(0, 212, 255, 0) 100%
   ); */
-  background-image: url('/images/Mask\ group.png');
+  /* background-image: url('/images/Mask\ group.png');
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 500px; */
 }
 
 .hero-content {
@@ -133,20 +133,18 @@ p {
     transform: translateX(0%);
   }
 }
-
+/* 
 .workshops-head-container {
   margin-bottom: 10px;
   margin-top: 25px;
-  /* border: 1px solid green; */
 }
-
+*/
 .banner {
   left: 0px;
   background-color: var(--primary-dark);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   margin-left: 0;
-  /* border: 1px dashed darkorchid; */
   width: max-content;
 }
 
@@ -160,8 +158,8 @@ p {
   letter-spacing: 0.5rem;
 }
 
+/*
 .workshop-container {
-  /* border: 1px solid red; */
   min-height: 0.8vh;
   text-align: left;
   margin-bottom: 25px;
@@ -176,26 +174,10 @@ p {
   padding-top: 10px;
 }
 
-.inschrijven {
-  background-color: var(--primary-dark);
-  padding: 10px;
-  border-radius: 10px;
-  color: var(--primary-light);
-  border: 2px solid var(--primary-dark);
-  text-decoration: none;
-}
-
-.info {
-  border: 2px solid var(--primary-dark);
-  padding: 10px;
-  border-radius: 10px;
-  color: var(--primary-dark);
-  text-decoration: none;
-}
-
 .buttons-div {
   margin-top: 30px;
 }
+*/
 
 /* DESCRIPTION */
 
@@ -267,22 +249,4 @@ p {
   color: var(--primary-dark);
   text-align: center;
   margin: 25px auto;
-}
-
-/* WORKSHOP CARDS */
-
-.workshopCard {
-  padding: 25px;
-  padding-bottom: 35px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 50px auto;
-}
-
-.workshopBody > p {
-  margin: 35px auto;
-}
-
-.temp-signup {
-  margin-top: 40px;
 }

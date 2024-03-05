@@ -197,13 +197,21 @@ window.onload = function () {
     if (locations[i].type == 'toreke') {
       let locationDayOne = document.createElement('h3');
       let locationDayTwo = document.createElement('h3');
+      //
       let locationDayOneHours = document.createElement('p');
       let locationDayTwoHours = document.createElement('p');
-      locationDayOne.innerHTML = Object.keys(torekeUren)[0];
-      locationDayOneHours.innerHTML = torekeUren.woensdag;
+      //
+      locationDayOne.innerHTML =
+        Object.keys(torekeUren)[0] +
+        ', ' +
+        Object.keys(torekeUren)[2] +
+        ' & ' +
+        Object.keys(torekeUren)[3];
+      locationDayOneHours.innerHTML = torekeUren.maandag;
       locationDayTwo.innerHTML = Object.keys(torekeUren)[1];
       locationDayTwoHours.innerHTML =
-        torekeUren.vrijdag.am + '<br>' + torekeUren.vrijdag.pm;
+        torekeUren.woensdag.am + '<br>' + torekeUren.woensdag.pm;
+      //
       locationItem.appendChild(locationDayOne);
       locationItem.appendChild(locationDayOneHours);
       locationItem.appendChild(locationDayTwo);

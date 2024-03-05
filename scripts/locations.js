@@ -36,8 +36,10 @@ const buurtHuisuren = {
 };
 
 const torekeUren = {
-  woensdag: '09u00 - 12u30',
-  vrijdag: { am: '09u00 - 12u00', pm: '13u00 - 17u00' },
+  maandag: '13u00 - 17u00',
+  woensdag: { am: '09u00 - 12u00', pm: '13u00 - 17u00' },
+  donderdag: '13u00 - 17u00',
+  vrijdag: '13u00 - 17u00',
 };
 
 const serreUren = {

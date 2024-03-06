@@ -53,6 +53,7 @@ window.onload = function () {
     }
     // Info
     let info = document.createElement('p');
+    info.innerHTML = locations[i].info;
     locationItem.appendChild(info);
 
     // TOON OP KAART - LINK NAAR GOOGLE MAPS
